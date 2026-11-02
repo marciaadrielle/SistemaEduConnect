@@ -20,7 +20,7 @@ public class TurmaRepository {
     }
 
     //Método para buscar turma pelo código
-    public Turma buscarPorCodigo(String codigo){
+    public Turma buscarTurmaPorCodigo(String codigo){
         for (Turma turma : turmas){
             if (turma.getCodigo().equals(codigo)){
                 return turma;

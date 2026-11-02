@@ -1,7 +1,6 @@
 package br.com.sistemaeduconnect.repository;
 
 import br.com.sistemaeduconnect.model.Professor;
-
 import java.util.ArrayList;
 import java.util.List;
 
