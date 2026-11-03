@@ -3,7 +3,7 @@ package br.com.sistemaeduconnect.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Aluno extends Usuario {
+public class Aluno extends Usuario implements Relatorio {
     private String matricula;
     private Curso curso;
     private List<Avaliacao> avaliacoes;
@@ -39,4 +39,12 @@ public class Aluno extends Usuario {
     }
 
 
+    @Override
+    public void gerarRelatorio() {
+        System.out.println("===== RELATÓRIO DO ALUNO =====");
+        System.out.println("Nome: " + getNome());
+        System.out.println("Matrícula: " + matricula);
+        System.out.println("Curso: " + curso.getNome());
+
+    }
 }
